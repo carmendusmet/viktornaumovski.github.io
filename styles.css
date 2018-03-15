@@ -1,0 +1,295 @@
+body, * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* Global Styles */
+
+html {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  /* letter-spacing: -1px; */
+}
+
+#videoplayer {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover;
+}
+
+#rawvideo{
+object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#back{
+  position: fixed;
+  bottom: 20px;
+  margin-left: 20px;
+}
+
+#back a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#back a {
+    color: red;
+    text-decoration: none;
+}
+
+/* /////// home and email //////// */
+
+.navbar {
+  position: fixed;
+  float: right !important;
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 48%;
+  text-align: right;
+  padding-right: 1em;
+  color: black;
+  text-decoration: none;
+  z-index: 10000;
+}
+
+.navbar a{
+    color: yellow;
+    text-decoration: none;
+    padding-left: 1em;
+    font-size: 1em;
+}
+
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* /////// ABOUT DIV //////// */
+
+.about{
+  overflow: scroll;
+  position: fixed;
+  margin-top: 10px;
+  /* margin-left: 20px; */
+  margin-right: 20px;
+  height: auto;
+  width: 90%;
+  z-index: 10000;
+  font-size: 1em;
+}
+
+.clicker {
+width:100px;
+outline:none;
+cursor:pointer;
+margin-left: 20px;
+padding: 0;
+
+}
+
+.hiddendiv {
+margin-left: 20px;
+overflow-x: scroll !important;
+display:none;
+height: 23vh;
+width: 70%;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+border: 1px solid black;
+font-size: 1em;
+}
+
+.clicker:focus + .hiddendiv{
+display:block;
+}
+
+.hiddendiv h1{
+  font-size: 1em !important;
+  font-weight: bold;
+  text-align: left;
+  color: black;
+  font-size: 1em;
+}
+
+.hiddendiv p{
+  font-size: 1em !important;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+}
+
+/* ////// project containers///// */
+
+#projects{
+  position: fixed;
+  margin-top: 50px;
+  margin-left: 20px;
+  text-align: left;
+}
+
+#projects a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#projects a{
+    text-decoration: none;
+    color: yellow;
+}
+
+/* ////// project pages///// */
+
+#title{
+  position: fixed;
+  margin-top: 10px;
+  margin-right: 20px;
+  height: auto;
+  width: auto;
+  z-index: 10000;
+  font-size: 1em;
+}
+
+#title .hiddendiv {
+margin-left: 20px;
+overflow-x: scroll !important;
+display:none;
+height: auto;
+width: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+border: 1px solid black;
+font-size: 1em;
+}
+
+#title .clicker {
+  width:auto;
+  outline:none;
+  cursor:pointer;
+  margin-left: 20px;
+  padding: 0;
+  color: red;
+  z-index: 10;
+}
+
+#title .clicker:focus + .hiddendiv{
+  display:block;
+}
+
+.container-main{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.container-main img{
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 10px;
+  vertical-align: center;
+}
+
+.container-main iframe{
+  display: block;
+  /* max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 10px;
+  vertical-align: center; */
+
+    display: block;       /* iframes are inline by default */
+    border: none;         /* Reset default border */
+    height: 100vh;        /* Viewport-relative units */
+    width: 100vw;
+    vertical-align: center;
+    padding: 0;
+}
+
+.container-com{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.container-com img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 10px;
+  vertical-align: center;
+}
+
+/* //// documentation //// */
+
+#extra {
+  overflow-x: scroll !important;
+  position: fixed;
+  top: 10px;
+  right: 0;
+  /* margin-right: 20px; */
+  float: right;
+  height: auto;
+  width: auto;
+  z-index: 10000;
+  margin: auto;
+}
+
+#extra .hiddendiv {
+
+  overflow-x: scroll !important;
+  display: none;
+  height: 90vh;        /* Viewport-relative units */
+  width: 80vw;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin-top: -50px;
+  margin-left: -100px;
+
+  border-radius: 0;
+  border: 0px;
+  background-color: transparent;
+  margin: auto;
+}
+
+#extra .clicker {
+width:auto;
+outline:none;
+cursor:pointer;
+margin-right: 20px;
+padding: 0;
+z-index: 10;
+color: red;
+}
+
+#extra .clicker:focus + .hiddendiv{
+display:block;
+}
+
+#extra img{
+  display: block;
+  max-width: 100%;
+  max-height: auto;
+  padding-bottom: 10px;
+  vertical-align: center;
+}

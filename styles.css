@@ -48,12 +48,12 @@ object-fit: cover;
 }
 
 #back a:hover {
-    color: red;
+    color: white;
     text-decoration: none;
 }
 
 #back a {
-    color: white;
+    color: red;
     text-decoration: none;
 }
 
@@ -145,6 +145,11 @@ display:block;
   margin-top: 50px;
   margin-left: 20px;
   text-align: left;
+}
+
+@media only screen and (max-width: 600px){
+  #projects{ width: 80%; text-align: center;}
+
 }
 
 #projects a:hover {

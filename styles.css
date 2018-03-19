@@ -73,7 +73,7 @@ object-fit: cover;
 }
 
 .navbar a{
-    color: yellow;
+    color: red;
     text-decoration: none;
     padding-left: 1em;
     font-size: 1em;

@@ -48,12 +48,12 @@ object-fit: cover;
 }
 
 #back a:hover {
-    color: white;
+    color: red;
     text-decoration: none;
 }
 
 #back a {
-    color: red;
+    color: white;
     text-decoration: none;
 }
 

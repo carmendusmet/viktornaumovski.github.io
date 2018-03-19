@@ -47,6 +47,12 @@ object-fit: cover;
   margin-left: 20px;
 }
 
+
+@media only screen and (max-width: 600px){
+#back{ text-align: center; width: 100%;s}
+
+}
+
 #back a:hover {
     color: white;
     text-decoration: none;
@@ -98,6 +104,11 @@ object-fit: cover;
   font-size: 1em;
 }
 
+@media only screen and (max-width: 600px){
+.about { width: 100%;}
+
+}
+
 .clicker {
 width:100px;
 outline:none;
@@ -118,6 +129,11 @@ background-color: white;
 border-radius: 10px;
 border: 1px solid black;
 font-size: 1em;
+}
+
+@media only screen and (max-width: 600px){
+.hiddendiv { width: 90%; margin: 5px;}
+
 }
 
 .clicker:focus + .hiddendiv{
@@ -172,6 +188,11 @@ display:block;
   width: auto;
   z-index: 10000;
   font-size: 1em;
+}
+
+@media only screen and (max-width: 600px){
+#title{ text-align: center; width: 100%;s}
+
 }
 
 #title .hiddendiv {
@@ -249,6 +270,10 @@ font-size: 1em;
   vertical-align: center;
 }
 
+@media only screen and (max-width: 600px){
+.container-com img{ padding-bottom: 5px;}
+
+}
 /* //// documentation //// */
 
 #extra {

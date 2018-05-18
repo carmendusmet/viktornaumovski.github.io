@@ -27,7 +27,7 @@ $(function() {
 
 $(function() {
 
-var videoList = ["catgirl.mp4", "grandpa1.mp4", "grandpa2.mp4"];
+var videoList = ["catgirl.mp4", "grandpa1_01.mp4", "grandpa1_02.mp4", "grandpa2_01.mp4", "grandpa2_02.mp4", "new_01.mp4", "new_02.mp4" ];
 videoList.sort(function(a, b) {return 0.5 - Math.random()});
 
 $("#videoplayer").html("<video id='rawvideo' autoplay poster='' id='bgvid' loop><source src='" + videoList[0] + "' type='video/mp4'></video>");

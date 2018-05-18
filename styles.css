@@ -37,13 +37,13 @@ object-fit: cover;
   left: 0;
 }
 
-/* ::-webkit-scrollbar {
-  display: none;
-} */
-
-.invisible-scrollbar::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
 }
+
+/* .invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+} */
 
 #back{
   position: fixed;

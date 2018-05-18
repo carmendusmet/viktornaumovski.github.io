@@ -37,7 +37,11 @@ object-fit: cover;
   left: 0;
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+.invisible-scrollbar::-webkit-scrollbar {
   display: none;
 }
 

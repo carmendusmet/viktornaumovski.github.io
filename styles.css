@@ -28,8 +28,33 @@ html {
     background-size: cover;
 }
 
+@media only screen and (max-width: 600px){
+#videoplayer{display: none;}
+}
+
+@media only screen and (min-width: 600px){
+#random{display: none;}
+}
+
+@media only screen and (max-width: 600px){
+  #random{
+    /* BOX MODEL */
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    /* ENHANCEMENT */
+    background-image: none;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;}
+  }
+
 #rawvideo{
-object-fit: cover;
+  object-fit: cover;
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -41,10 +66,6 @@ object-fit: cover;
   display: none;
 }
 
-/* .invisible-scrollbar::-webkit-scrollbar {
-  display: none;
-} */
-
 #back{
   position: fixed;
   bottom: 20px;
@@ -53,7 +74,7 @@ object-fit: cover;
 
 
 @media only screen and (max-width: 600px){
-#back{ text-align: center; width: 100%;s}
+#back{ text-align: center; width: 100%; margin: 0;}
 
 }
 
@@ -94,6 +115,11 @@ object-fit: cover;
     text-decoration: none;
 }
 
+@media only screen and (max-width: 600px){
+.navbar{
+  margin-left: 46%;}
+}
+
 /* /////// ABOUT DIV //////// */
 
 .about{
@@ -109,7 +135,8 @@ object-fit: cover;
 }
 
 @media only screen and (max-width: 600px){
-.about { width: 100%;}
+.about {
+  width: 100%;}
 
 }
 
@@ -168,7 +195,13 @@ display:block;
 }
 
 @media only screen and (max-width: 600px){
-  #projects{ width: 80%; text-align: center;}
+  #projects{
+    text-align: center; margin-left: 0; width: 100%;}
+
+  #projects p{
+    padding-top: 5px;
+    }
+
 
 }
 
@@ -195,12 +228,12 @@ display:block;
 }
 
 @media only screen and (max-width: 600px){
-#title{ text-align: center; width: 100%;s}
+#title{ text-align: center; width: 100%;}
 
 }
 
 #title .hiddendiv {
-margin-left: 20px;
+/* margin-left: 20px; */
 overflow-x: scroll !important;
 display:none;
 height: auto;

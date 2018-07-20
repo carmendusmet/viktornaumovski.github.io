@@ -36,7 +36,7 @@ $(function() {
 var videoList = ["catgirl.mp4", "grandpa1_01.mp4", "grandpa1_02.mp4", "grandpa2_01.mp4", "grandpa2_02.mp4", "new_01.mp4", "new_02.mp4" ];
 videoList.sort(function(a, b) {return 0.5 - Math.random()});
 
-$("#videoplayer").html("<video id='rawvideo' autoplay poster='' id='bgvid' loop><source src='" + videoList[0] + "' type='video/mp4'></video>");
+$("#videoplayer").html("<video id='rawvideo' autoplay muted poster='' id='bgvid' loop><source src='" + videoList[0] + "' type='video/mp4'></video>");
 });
 
 function randombg(){
@@ -44,11 +44,11 @@ function randombg(){
   var bigSize = ["url('Welcome_Mobile_Stills_1.png')",
                  "url('Welcome_Mobile_Stills_2.png')",
                  "url('Welcome_Mobile_Stills_4.png')",
-		"url('Welcome_Mobile_Stills_5.png')",
-		"url('Welcome_Mobile_Stills_6.png')",
-		"url('Welcome_Mobile_Stills_7.png')",
-		"url('Welcome_Mobile_Stills_8.png')",
-		"url('Welcome_Mobile_Stills_9.png')",
+								 "url('Welcome_Mobile_Stills_5.png')",
+                	"url('Welcome_Mobile_Stills_6.png')",
+									"url('Welcome_Mobile_Stills_7.png')",
+									"url('Welcome_Mobile_Stills_8.png')",
+									"url('Welcome_Mobile_Stills_9.png')",
                  "url('Welcome_Mobile_Stills_10.png')",
                  "url('Welcome_Mobile_Stills_11.png')"];
   document.getElementById("random").style.backgroundImage=bigSize[random];
